@@ -5,6 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
+    "build": "echo 'no hay que compliar'",
     "start": "node ./src/index.js"
   },
   "keywords": [],
