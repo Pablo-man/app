@@ -1,10 +1,10 @@
 import {createPool} from 'mysql2/promise';
 
 const pool = createPool({
-    host: 'localhost',
-    port: '3306',
+    host: 'monorail.proxy.rlwy.net',
+    port: '57558',
     user: 'root',
-    password: 'angel123',
+    password: 'NgYhOvIZiCioKcWjdTNqItYBggVseBHP',
     database: 'Prueba01'
 });
 
