@@ -12,7 +12,6 @@ jobs:
     steps:
       - name: Deploy to Railway
         if: ${{ github.event_name == 'push' }}
-        
         uses: bervProject/railway-deploy@main
         with:
           railway_token: ${{ secrets.TOKEN_CRUD }}
