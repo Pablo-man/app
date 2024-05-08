@@ -19,6 +19,7 @@ jobs:
         with:
           node-version: 18
       - run: npm install
+        working-directory: app
 
       - name: Install Railway
         run: npm i -g @railway/cli
