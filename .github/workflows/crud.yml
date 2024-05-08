@@ -11,22 +11,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-
       - name: Checkout tools repo
         uses: actions/checkout@v2
         with:
           repository: Pablo-man/app
           path: app
 
-      - name: Use Node 12
-        uses: actions/setup-node@v1
+      - uses: actions/setup-node@v4
         with:
-          node-version: 16.x
-
-      - name: Install packages
-        run: npm ci
+          node-version: 18
+        - run: npm ci
+        - run: npm test
 
       - name: Install Railway
         run: npm i -g @railway/cli
