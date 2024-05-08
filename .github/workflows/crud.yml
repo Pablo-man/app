@@ -26,5 +26,6 @@ jobs:
 
       - name: Deploy
         run: railway up --service crud
+        working-directory: app
         env:
           RAILWAY_TOKEN: ${{ secrets.TOKEN_CRUD }}
