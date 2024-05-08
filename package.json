@@ -5,7 +5,7 @@
   "main": "index.js",
   "type": "module",
   "scripts": {
-    "build": "echo 'no hay que compliar'",
+    "build": "npm ci",
     "start": "node ./src/index.js"
   },
   "keywords": [],
